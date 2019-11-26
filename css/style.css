@@ -1,0 +1,169 @@
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    /* font-family: baloo; */
+}
+header{
+    background:#4B536A;
+    overflow: hidden;
+
+}
+.welcome-screen{
+    height: 100vh !important;
+    width: 100%;
+    background: url(https://res.cloudinary.com/lissacinta/image/upload/v1574775213/background2_r62xzd.png) black no-repeat;
+    background-position: right center;
+    background-size: contain;
+    position: relative;
+}
+.welcome-screen .overlay{
+    height: 100vh;
+    /* width: 100vw; */
+    background: rgba(0, 0, 0,0.5);
+    z-index: -1;
+}
+.welcome-text{
+    color: white;
+    padding: 13rem 0 13rem 15rem;
+    position: absolute;
+    top: 10px;
+    left: 0;
+}
+.welcome-text a{
+    display: inline-block;
+    margin-top: 2rem;
+    padding: 1rem;
+    background: #FF00FE;
+    color: #fff;
+    font-size: 1.5em;
+    font-weight: bold;
+    border-radius: 0.5rem;
+}
+.welcome-text a:hover{
+    text-decoration: none;
+    background: #7bf503;
+    color: #000000;
+}
+
+.section{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+.welcome-screen2{
+    background: url(https://res.cloudinary.com/lissacinta/image/upload/v1574775164/ngozi_ixmqqu.jpg)  no-repeat;
+    background-position: right center;
+    background-size: contain;
+}
+.section .overlay{
+    height: 100vh;
+    /* width: 100vw; */
+    background: rgba(0, 0, 0,0.8);
+    z-index: -1;
+}
+.about-me{
+    color: white;
+    max-width: 900px;
+    
+}
+.left{
+    position: absolute;
+    top: 10px;
+    left: 0;
+    padding: 13rem 0 0 10rem;
+
+}
+.right{
+    position: absolute;
+    top: 0.3rem;
+    right: 0;
+    padding: 13rem 10rem 0 0;
+    text-align: right;
+
+}
+.about-me a{
+    display: inline-block;
+    color: #FF00FE;
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 0 1rem;
+    border-radius: 0.5rem;
+}
+.about-me a:hover{
+    text-decoration: none;
+    background: #7bf503;
+    color: #000000;
+}
+
+.content a{
+    color: #FF00FE;
+    font-size: 1em;
+    font-weight: bold;
+    padding: 0;
+    border: none;
+    display: inline; 
+}
+.to-do{
+    background: url(https://res.cloudinary.com/lissacinta/image/upload/v1574775164/ngozi_ixmqqu.jpg) #000 no-repeat;
+    background-position: left center;
+    background-size: contain;
+}
+.important{
+    background: url(https://res.cloudinary.com/lissacinta/image/upload/v1574775164/ngozi_ixmqqu.jpg) #FF00FE no-repeat;
+    background-position: right center;
+    background-size: contain;
+}
+
+.resources{
+    background: url(https://res.cloudinary.com/lissacinta/image/upload/v1574775164/ngozi_ixmqqu.jpg) silver no-repeat;
+    background-position: left center;
+    background-size: contain;
+}
+footer{
+    background: #4B536A;
+    margin: 0;
+    height: 50px;
+    color: white;
+    padding-top: 0.5rem;
+    text-align: center;
+}
+
+@media screen and (max-width: 760px) {
+    .welcome-text{
+   
+        padding: 13rem 0 13rem 2rem;
+
+        
+    }
+
+    .left{
+        padding: 8rem 0.7rem 0 0.7rem;
+
+    }
+    .right{
+        
+        padding: 8rem 0.7rem 0 0.7rem;
+    }
+}
+@media screen and (max-width: 860px) {
+    .welcome-text{
+   
+        padding: 13rem 0 13rem 2rem;
+
+        
+    }
+
+    .left{
+        padding: 8rem 0.7rem 0 0.7rem;
+
+    }
+    .right{
+        
+        padding: 5rem 0.7rem 0 0.7rem;
+    }
+}
+
+
+
+
