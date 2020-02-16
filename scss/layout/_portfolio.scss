@@ -1,0 +1,55 @@
+// Styling for the portfolio section
+#portfolio {
+   /* Add padding BETWEEN each column */
+    
+   .row > .column {
+    padding: 8px;
+  }
+  
+  /* Create three equal columns that floats next to each other */
+  .column {
+    float: left;
+    width: 50%;
+    display: none; /* Hide all elements by default */
+  }
+  
+  /* Clear floats after rows */ 
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Content */
+  .content {
+    background-color: white;
+    padding: 10px;
+  }
+  
+  .content h4 {
+    padding-top: 10px;
+    font-size: 1.6rem;
+  }
+  
+  /* The "show" class is added to the filtered elements */
+  .show {
+    display: block;
+  }
+  
+  #myBtnContainer{
+    margin-top: -5rem;
+  }
+}
+@media(min-width:767px) {
+  #portfolio {
+    .portfolio-item {
+      margin: 0 0 30px;
+    }
+    .column {
+      float: left;
+      width: 33.33%; /* Hide all elements by default */
+    }
+    
+  }
+}
+

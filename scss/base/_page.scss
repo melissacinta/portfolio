@@ -1,0 +1,181 @@
+// Global styling for this template
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+} 
+html{
+    font-size: 62.5%; //1rem = 10px
+
+    @include respond(tab-land) { //width<1200?
+        font-size:56.25%; //1rem = 9px, 9/16 = 56.25%
+    }
+
+    @include respond(tab-port) { //width<900?
+        font-size:50%; //1rem = 8px, 8/16 = 50%
+    }
+
+    // @include respond(phone) { //width<600?
+    //     font-size:30%; //1rem = 4.8px, 4.8/16 = 30%
+    // }
+    
+    @include respond(big-desktop) {
+        font-size:75%; //1rem = 12px, 12/16 = 75%
+    }
+}
+
+
+body {
+  box-sizing: border-box;
+  overflow-x: hidden;
+  @include body-font;
+}
+
+p {
+  line-height: 1.75;
+}
+
+a {
+  color: $primary;
+  &:hover {
+    color: darken($primary, 10%);
+  }
+}
+.heading-primary{
+  color:$color-white;
+  text-transform: uppercase;
+  backface-visibility: hidden;
+  margin-bottom: 6rem;
+  
+
+  &--main{
+      display: block;
+      font-size: 5rem;
+      font-weight: 400;
+      letter-spacing: 1.5rem;
+      animation-name: moveInLeft;
+      text-shadow: 2px 2px #000;
+      animation-duration: 1s;
+      animation-timing-function: ease-out;
+
+      @include respond(phone) {
+          letter-spacing: 1rem;
+          font-size:5rem; 
+      }
+  
+  }
+  &--sub{
+      display: block;
+      font-size: 1.5rem;
+      font-weight: 700; 
+      letter-spacing: .76rem;
+      text-shadow: 2px 2px rgb(53, 53, 53);
+      animation-name: moveInRight;
+      animation-duration: 1s;
+      animation-timing-function: ease-out;
+
+      @include respond(phone) {
+          letter-spacing: .5rem;
+      }
+  }
+}
+.heading-secondary{
+  font-size: 4rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  display: inline-block;
+  margin-top: 0;
+  margin-bottom: 15px;
+  background-image: linear-gradient(to right, $color-primary-light, $color-primary-dark);
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: all .2s;
+
+  @include respond(tab-port) {
+      font-size:3rem; 
+  }
+
+  @include respond(phone) {
+      font-size:2.5rem; 
+  }
+
+  &:hover{
+      transform: skewY(2deg) skewX(15deg) scale(1.1);
+      text-shadow: .5rem 1rem 2rem rgba($color-black, .2);
+  }
+
+
+
+}
+.heading-tertiary{
+  font-size: $default-font-size;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.paragraph{
+  font-size: $default-font-size;
+  &:not(:last-child){
+      margin-bottom: 3rem;
+  }
+
+}
+.text-primary {
+  color: $primary !important;
+}
+
+// h1,
+// h2,
+// h3,
+// h4,
+// h5,
+// h6 {
+//   font-weight: 700;
+//   @include heading-font;
+// }
+
+.page-section {
+  padding: 100px 0;
+  h2.section-heading {
+    font-size: 40px;
+    margin-top: 0;
+    margin-bottom: 15px;
+  }
+  h3.section-subheading {
+    font-size: 16px;
+    font-weight: 400;
+    font-style: italic;
+    margin-bottom: 75px;
+    text-transform: none;
+    @include serif-font;
+  }
+}
+.services{
+  margin-top: -15vh;
+}
+@media(min-width:768px) {
+  section {
+    padding: 150px 0;
+  }
+}
+
+// Highlight color customization
+::-moz-selection {
+  background: $primary;
+  text-shadow: none;
+}
+
+::selection {
+  background: $primary;
+  text-shadow: none;
+}
+
+img::selection {
+  background: transparent;
+}
+
+img::-moz-selection {
+  background: transparent;
+}

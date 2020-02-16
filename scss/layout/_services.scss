@@ -1,0 +1,10 @@
+// Styling for the services section
+.service-heading {
+  margin: 15px 0;
+  text-transform: none;
+}
+.text-justified{
+  @media (min-width:576px) {
+    text-align: justify;
+  }
+}

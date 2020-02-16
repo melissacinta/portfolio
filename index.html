@@ -1,67 +1,810 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="css/style.css">
-    
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>TechieNg</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+  <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+  <!-- Custom styles for this template -->
+  <link href="css/icon-font.css" rel="stylesheet">
+
+  <link href="css/agency.min.css" rel="stylesheet">
+  <link rel = "icon" href = "https://res.cloudinary.com/lissacinta/image/upload/c_scale,w_24/v1581712861/myAvatar_tdp5rk.ico" type = "image/ico">
 </head>
-<body>
-    <header  class="navbar navbar-expand-md navbar-dark fixed-top ">
-        
-        <nav class="container navbar navbar-expand-md navbar-dark">
-            <a class="navbar-brand" href="index.html"><img src="https://res.cloudinary.com/lissacinta/image/upload/v1574775159/mylogo_ceu0lo.png" class="brand-img" alt="" width="200vw"></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarCollapse">
-              <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                  <a class="nav-link" href="about.html">About Me</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">My Projects</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Contact Me</a>
-                </li>
-              </ul>
-              
-            </div>
-          </nav>
-    </header>
-    <main>
-        <div class="welcome-screen">
-            <div class="overlay"></div>
-            <div class="welcome-text ">
-                
-                <h1>Hi! I am TechieNg</h1>
-                <h2>Frontend Developer</h2>
-                <a href="#">Contact Me</a>
-            </div>
+
+<body id="page-top">
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand js-scroll-trigger" href="#page-top"><img src="https://res.cloudinary.com/lissacinta/image/upload/v1581710084/myAvatar_m2uf5b.png" width="80vw" alt="" class="img-brand"></a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav text-uppercase ml-auto">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#services">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#experience">experience</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="header__text-box">
+      <h1 class="heading-primary">
+          <span class="heading-primary--main">Hi! I'm</span>
+          <span class="heading-primary--main">Ngozi Aguluka</span>
+          <span class="heading-primary--sub">Frontend developer & graphics designer</span>
+      </h1>
+      <a href="https://drive.google.com/file/d/14pnhLbNPOP7KkUkm8SJVubMkumKizW7M/view?usp=sharing" class="btn btn--white">Download my Resume</a>
+    </div>  
+  </header>
+
+  <!-- Services -->
+  <section class="page-section services" id="services">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="heading-secondary text-uppercase">What I can do</h2>
+          <h3 class="section-subheading text-muted"></h3>
+        </div>
+      </div>
+      <div class="row text-center inner">
+        <div class="col-sm-6">
+          <span class="fa-stack fa-6x">
+            <i class="fas fa-circle fa-stack-2x text-primary"></i>
+            <i class="icon-basic-webpage-img-txt fa-stack-1x fa-inverse"></i>
+          </span>
+          <h4 class="heading-tertiary mt-4">Frontend Development is in my blood</h4>
+          <p class="text-muted text-justified paragraph">I just love the idea that with a few lines of code magic appears on screens, it never seizes to amaze me. So yeah I know how to create beautiful websites that is responsive accross different devices.</p>
+        </div>
+        <div class="col-sm-6">
+          <span class="fa-stack fa-6x">
+            <i class="fas fa-circle fa-stack-2x text-primary"></i>
+            <i class="fas fa-paint-brush fa-stack-1x fa-inverse"></i>
+          </span>
+          <h4 class="heading-tertiary mt-4">Design the Heck outta ya!</h4>
+          <p class="text-muted text-justified paragraph">With the aid of Figma, Corel and Photoshop, I believe I have all I need to create designs that will wow you. That being said I do like to keep it simple : )</p>
         </div>
         
-    </main>
+      </div>
+    </div>
+  </section>
 
+  <!-- Portfolio Grid -->
+  <section class="bg-light page-section" id="portfolio">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="heading-secondary text-uppercase">Portfolio</h2>
+          <h3 class="section-subheading text-muted">Put together by yours truly</h3>
+        </div>
+      </div>
+      <div id="myBtnContainer">
+        <button class="btn btn--green active mt-3" onclick="filterSelection('all')"> Show all</button>
+        <button class="btn mt-3" onclick="filterSelection('web_design')"> Web Development</button>
+        <button class="btn mt-3" onclick="filterSelection('graphics')"> Graphics</button>
+      </div>
+      
+      <!-- Portfolio Gallery Grid -->
+      <div class="row text-center">
+        <div class="column web_design">
+          <div class="content">
+            <img src="https://res.cloudinary.com/lissacinta/image/upload/v1581710083/wesley_cg8wbu.png" alt="Wesley" style="width:100%">
+            <h4 class="heading-tertiary">Wesley University Ondo</h4>
+            <p class="paragraph">Developed the frontend aspect of the institution's website. My first ever frontend job, not my best work but I will always remember it. CLick <a href="http://www.wesleyuni.edu.ng/" target="_blank">here</a> to visit site</p>
+          </div>
+        </div>
+        <div class="column web_design">
+          <div class="content">
+          <img src="https://res.cloudinary.com/lissacinta/image/upload/v1581871919/hng_aqni7l.png" alt="Living Faith" style="width:100%">
+            <h4 class="heading-tertiary">Hotels.ng intership 7 website</h4>
+            <p class="paragraph">Contributed to the development of Hotels.ng intership 7 website during my internship with hotels.ng. CLick <a href="https://hngi7.hng.tech/" target="_blank">here</a> to visit site</p>
+          </div>
+        </div>
 
-
-
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="js/jquery.ripples-min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <script>
+        <div class="column graphics">
+          <div class="content">
+          <img src="https://res.cloudinary.com/lissacinta/image/upload/v1581710081/living_faith2_ssupl4.jpg" alt="Living Faith" style="width:100%">
+            <h4 class="heading-tertiary">Living Faith Church, Ondo</h4>
+            <p class="paragraph">E-flyer done for milk and honey choir of Living fath church for their christmas carol</p>
+          </div>
+        </div>
+        <div class="column graphics">
+          <div class="content">
+          <img src="https://res.cloudinary.com/lissacinta/image/upload/v1581710072/CUSTOM5_sh3z4c.jpg" alt="Custom" style="width:100%">
+            <h4 class="heading-tertiary">Custom</h4>
+            <p class="paragraph">Custom corel draw graphics done just for the fun of it</p>
+          </div>
+        </div>
         
-        $('.welcome-screen').ripples({
-            resolution: 512,
-            dropRaduis:20,
-            perturbance: 0.04
+        <div class="column web_design">
+          <div class="content">
+          <img src="https://res.cloudinary.com/lissacinta/image/upload/v1581710082/sapphire_luk9zz.png" alt="Sapphire" style="width:100%">
+            <h4 class="heading-tertiary">Sapphire Stays Ltd</h4>
+            <p class="paragraph">Website created for Sapphire Stays LTD. CLick <a href="https://greensapphire.000webhostapp.com/index.html" target="_blank">here</a> to visit site</p>
+          </div>
+        </div>
+        <div class="column web_design">
+          <div class="content">
+          <img src="https://res.cloudinary.com/lissacinta/image/upload/v1581710078/linkup_jnez6q.png" alt="web_design" style="width:100%">
+            <h4 class="heading-tertiary">LinkUp</h4>
+            <p class="paragraph">A dating site login page</p>
+          </div>
+        </div>
+        <div class="column graphics">
+          <div class="content">
+          <img src="https://res.cloudinary.com/lissacinta/image/upload/v1581710083/2_lhpmk0.png" alt="NiMechE" style="width:100%">
+            <h4 class="heading-tertiary">NiMechE</h4>
+            <p class="paragraph">Brochure</p>
+          </div>
+        </div>
+        <div class="column graphics">
+          <div class="content">
+          <img src="https://res.cloudinary.com/lissacinta/image/upload/v1581710070/3_pxsqsa.png" alt="NiMechE" style="width:100%">
+            <h4 class="heading-tertiary">NiMechE</h4>
+            <p class="paragraph">Brochure</p>
+          </div>
+        </div>
+        <div class="column graphics">
+          <div class="content">
+          <img src="https://res.cloudinary.com/lissacinta/image/upload/v1581710285/DSC_0019_ehdkgl.png" alt="Abidsam" style="width:100%">
+            <h4 class="heading-tertiary">Abidsam</h4>
+            <p class="paragraph">photo edit for Abidsam's pre-wedding upload purposes</p>
+          </div>
+        </div>
+        <div class="column web_design">
+          <div class="content">
+          <img src="https://res.cloudinary.com/lissacinta/image/upload/v1581710075/kymo2_ibvzyu.png" alt="web_design" style="width:100%">
+            <h4 class="heading-tertiary">Kymo Budget sign in page</h4>
+            <p class="paragraph">A task from my Hotels.ng internship days</p>
+          </div>
+        </div>
+        
+        <div class="column graphics">
+          <div class="content">
+          <img src="https://res.cloudinary.com/lissacinta/image/upload/v1581710081/SAMPLE_II_y2xvvb.jpg" alt="custom" style="width:100%">
+          <h4 class="heading-tertiary">Custom</h4>
+          <p class="paragraph">Custom corel draw graphics done for the fun of it</p>
+          </div>
+        </div>
+        <div class="column graphics">
+          <div class="content">
+          <img src="https://res.cloudinary.com/lissacinta/image/upload/v1581710071/cdscert_s7hd0a.png" alt="Ict-cds" style="width:100%">
+            <h4 class="heading-tertiary">ICT CDS, Ondo</h4>
+            <p class="paragraph">Certificate of merit for Ondo-west ICT community development services(CDS) group</p>
+          </div>
+        </div>
+        
+        <div class="column graphics">
+          <div class="content">
+          <img src="https://res.cloudinary.com/lissacinta/image/upload/v1581710073/Ghost_lee3_ur0e1i.png" alt="Car" style="width:100%">
+            <h4 class="heading-tertiary">Ghost Lee</h4>
+            <p class="paragraph">Logo</p>
+          </div>
+        </div>
+        <div class="column graphics">
+          <div class="content">
+          <img src="https://res.cloudinary.com/lissacinta/image/upload/v1581710074/instachallenge3_l7rx9w.jpg" alt="instachallenge" style="width:100%">
+            <h4 class="heading-tertiary">Wesley university instagram challenge</h4>
+            <p class="paragraph">E-flyer For wesley University's instagram challenge</p>
+          </div>
+        </div>
+        <div class="column graphics">
+          <div class="content">
+          <img src="https://res.cloudinary.com/lissacinta/image/upload/v1581710072/eng-mag_iy6aeo.jpg" alt="NiMechE" style="width:100%">
+            <h4 class="heading-tertiary">NiMechE</h4>
+            <p class="paragraph">Brochure</p>
+          </div>
+        </div>
+        
+        
+        <div class="column graphics">
+          <div class="content">
+            <img src="https://res.cloudinary.com/lissacinta/image/upload/v1581710078/FBROWN5_ljy28x.png" alt="Felix" style="width:100%">
+            <h4 class="heading-tertiary">Felix Brown</h4>
+            <p class="paragraph">Brand</p>
+          </div>
+        </div>
+        <br>
+      </div>
+      <p>
+        <a href="https://drive.google.com/file/d/14pnhLbNPOP7KkUkm8SJVubMkumKizW7M/view?usp=sharing" class="btn btn--green text-center">Download my Resume</a>
+      </p>
+    </div>
+    
+  </section>
+
+  <!-- About -->
+  <section class="page-section" id="about">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="heading-secondary text-uppercase">About me</h2>
+          <h3 class="section-subheading text-muted">I am Aguluka Ngozi Celestina, I go by the moniker TechieNg on most social platform, I am a fun loving person with an outgoing personality who loves messing arround with codes</h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <ul class="timeline">
+            <li>
+              <div class="timeline-image">
+                <img class="rounded-circle img-fluid" src="https://res.cloudinary.com/lissacinta/image/upload/v1581709966/2_ivoqbo.jpg" alt="">
+              </div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <h4>1999-2005</h4>
+                  <h4 class="subheading">First School Leaving Certificate</h4>
+                </div>
+                <div class="timeline-body">
+                  <p class="text-muted paragraph">Start Right Nursery and Primary School, Agodo Egbe Lagos State Nigeria.</p>
+                </div>
+              </div>
+            </li>
+            <li class="timeline-inverted">
+              <div class="timeline-image">
+                <img class="rounded-circle img-fluid" src="https://res.cloudinary.com/lissacinta/image/upload/v1581709966/2_ivoqbo.jpg" alt="">
+              </div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <h4>Sep 2005- Aug 2011</h4>
+                  <h4 class="subheading">Senior School Leaving Certificate</h4>
+                </div>
+                <div class="timeline-body">
+                  <p class="text-muted paragraph">Distinct Achievers High School - Ikotun Egbe Lagos State Nigeria.</p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="timeline-image">
+                <img class="rounded-circle img-fluid" src="https://res.cloudinary.com/lissacinta/image/upload/v1581709965/unn_sxwa8r.jpg" alt="">
+              </div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <h4>Oct 2014 - July 2018</h4>
+                  <h4 class="subheading">Bachelor of Science: Computer Science(Second class upper division)</h4>
+                </div>
+                <div class="timeline-body">
+                  <p class="text-muted paragraph">University of Nigeria, Nsukka, Enugu state.</p>
+                </div>
+              </div>
+            </li>
+            <li class="timeline-inverted">
+              <div class="timeline-image">
+                <img class="rounded-circle img-fluid" src="https://res.cloudinary.com/lissacinta/image/upload/v1581709965/SIWES_cflnwi.jpg" alt="">
+              </div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <h4>July - Oct 2017</h4>
+                  <h4 class="subheading">Student Industrial Work Experience(SIWES)</h4>
+                </div>
+                <div class="timeline-body">
+                  <p class="text-muted paragraph">Interned at Dnelix ICT Hub, Nsukka, Enugu State. Where I got my initiation into the world of web Development and discovered my love for web development.</p>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="timeline-image">
+                <img class="rounded-circle img-fluid" src="https://res.cloudinary.com/lissacinta/image/upload/v1581709963/NYSC_wc0uve.png" alt="">
+              </div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <h4>April 2019 – May 2020</h4>
+                  <h4 class="subheading">National Youth Service Corps Member</h4>
+                </div>
+                <div class="timeline-body">
+                  <p class="text-muted paragraph">Served in the capacity of an Ict Personnel in Wesley University, Ondo.</p>
+                </div>
+              </div>
+            </li>
+            <li class="timeline-inverted">
+              <div class="timeline-image">
+                <img class="rounded-circle img-fluid" src="https://res.cloudinary.com/lissacinta/image/upload/v1581709967/fmt-logo_wketqs.jpg" alt="">
+              </div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <h4>Nov. (2019) - Current</h4>
+                  <h4 class="subheading">Frontend Developer (Remote)</h4>
+                </div>
+                <div class="timeline-body">
+                  <p class="text-muted paragraph">FMT Labz</p>
+                </div>
+              </div>
+            </li class="timeline-inverted">
+            <li class="timeline-inverted">
+              <div class="timeline-image">
+                <h4>Stay
+                  <br>Tuned for
+                  <br>More!</h4>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience -->
+  <section class="bg-light page-section" id="experience">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="heading-secondary text-uppercase">Experience</h2>
+          <h3 class="section-subheading text-muted">Well I've been places, done things here are but a few of them</h3>
+        </div>
+      </div>
+      <div class="row border-down">
+        <div class="col-sm-5">
+          <div class="team-member">
+            <img class="mx-auto rounded-circle" src="https://res.cloudinary.com/lissacinta/image/upload/v1581710391/nysc_jxs6rr.jpg" alt="">
+            <!-- <p class="text-muted paragraph mt-4">Click <a href="#">here</a> to view my NYSC photo memories.</p> -->
+            <p class="text-muted paragraph mt-4">Photo memories coming soon...</p>
+          </div>
+        </div>
+        <div class="col-sm-7">
+          <div class="team-member">
+           
+            <h2>My Nysc Experience</h2>
+            <p class="text-muted paragraph"> <a href="http://www.wesleyuni.edu.ng/" target="_blank">@Wesley University,</a> Ondo</p>
+            <p class="text-muted text-justified paragraph">So I served my country in the capacity of an ict personnel at wesleey university ondo where I carried out interesting tasks which includes but is not limited to:
+            </p>
+            <ul class="text-left text-muted paragraph" style="list-style: none; margin-left: 2rem;">
+              <li>
+                Devloping the frontend aspect of the institution's website my first ever real and large web project.
+              </li>
+              <li>
+                Designing and printing ID cards and tags.
+              </li>
+              <li>
+                Designing of print and e-flyers, design of certificate of attendance for program organised by the institution
+              </li>
+              <li>
+                Troubleshooting Pc issues, Software installations, formatting of systems
+              </li>
+              <li>
+                Software installations
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="row mt-4 border-down">
+        
+        <div class="col-sm-7">
+          <div class="team-member">
+           
+            <h2>Interning @<a href="https://hotels.ng" target="_blank">Hotels.ng</a> </h2>
+            <p class="text-muted paragraph">Remote Internship</p>
+            <p class="text-muted text-justified paragraph">Now that was a lesson in perseverance and efficiency and I am happy to say that I persevered. Wheew! it was not easy scrambling to meet deadlines while working with relatively new concepts (atleast at that moment in time the were new to me). but was it educative and I am proud to say that I learnt a lot in the few months I spent there. Thanks a lot Hotels.ng for that wonderful opportunity.
+            </p>
+            <p class="text-muted text-justified paragraph"> While there I got introduced to web animations <a href="https://css-tricks.com/aos-css-driven-scroll-animation-library/" target="_blank">(AOS)</a>, I heard the term <a href="https://pixelcog.github.io/parallax.js/" target="_blank">Parallax</a> for the first time. At first I wondered what physics had to web. dev. : ) but there you have it, an ingenious scroll effect.
+            </p>
+
+          </div>
+        </div>
+
+        <div class="col-sm-5">
+          <div class="team-member">
+            <img class="mx-auto rounded-circle" src="https://res.cloudinary.com/lissacinta/image/upload/v1581710392/hotel_qqhoga.jpg" alt="">
+            <p class="text-muted paragraph mt-4">Unfortunately since this was a remote internship the are no more images to display.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row mt-4">
+        <div class="col-sm-5">
+          <div class="team-member">
+            <img class="mx-auto rounded-circle" src="https://res.cloudinary.com/lissacinta/image/upload/v1581710391/dnelix_zchf5x.jpg" alt="">
+            <p class="text-muted paragraph mt-4">Photo memories coming soon...</p>
+          </div>
+        </div>
+        <div class="col-sm-7">
+          <div class="team-member">
+           
+            <h2>My Self  Discovery</h2>
+            <p class="text-muted paragraph"> <a href="https://twitter.com/dnelix2/" target="_blank">@Dnelix ICT Hub</a> Nsukka, Enugu State</p>
+            <p class="text-muted text-justified paragraph">I spent my student industral work experience scheme<a href="https://siwesbeginner.com/siwes-introduction/" target="_blank">(siwes)</a> at Dnelix ict hub where I discoverd the world of the web specifically its design. I discoverd an affinity for web development during my stay there and that was the turning point for though I did not know until a few years later.
+            </p>
             
-        });
+          </div>
+        </div>
+      </div>
+  </section>
+
+ 
+
+  <!-- Contact -->
+  <section class="page-section" id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="heading-secondary text-uppercase">Contact Me</h2>
+          <h3 class="section-subheading text-muted">Leave me a message and I will get back to you soon.</h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <form id="contactForm" name="sentMessage" novalidate="novalidate">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <input class="form-control" id="name" type="text" placeholder="Your Name *" required="required" data-validation-required-message="Please enter your name.">
+                  <p class="help-block text-danger"></p>
+                </div>
+                <div class="form-group">
+                  <input class="form-control" id="email" type="email" placeholder="Your Email *" required="required" data-validation-required-message="Please enter your email address.">
+                  <p class="help-block text-danger"></p>
+                </div>
+                <div class="form-group">
+                  <input class="form-control" id="phone" type="tel" placeholder="Your Phone *" required="required" data-validation-required-message="Please enter your phone number.">
+                  <p class="help-block text-danger"></p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <textarea class="form-control" id="message" placeholder="Your Message *" required="required" data-validation-required-message="Please enter a message."></textarea>
+                  <p class="help-block text-danger"></p>
+                </div>
+              </div>
+              <div class="clearfix"></div>
+              <div class="col-lg-12 text-center">
+                <div id="success"></div>
+                <button id="sendMessageButton" class="btn btn-primary btn-xl text-uppercase btn--animated" type="submit">Send Message</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-4">
+          <span class="copyright">Copyright &copy; TechieNg 2020</span>
+        </div>
+        <div class="col-md-4">
+          <ul class="list-inline social-buttons">
+            <li class="list-inline-item">
+              <a href="https://twitter.com/TechieNg">
+                <i class="fab fa-twitter"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://www.facebook.com/TechieNg">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://www.linkedin.com/in/ngozi-aguluka/" target="_blank">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <ul class="list-inline quicklinks">
+            
+            <li class="list-inline-item">
+              <a class="js-scroll-trigger" href="#page-top">Back to Top</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Portfolio Modals -->
+
+  <!-- Modal 1 -->
+  <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"></div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <div class="modal-body">
+                <!-- Project Details Go Here -->
+                <h2 class="text-uppercase">Mokola</h2>
+                <p class="item-intro text-muted">Trusted artisans from the cloud to your doorstep</p>
+                <img class="img-fluid d-block mx-auto" src="img/portfolio/logo_transparent.png" alt="">
+                <p>introducing mokola a mobile app that bring the services of choice artisan to your fingertips - services to be offered includes; Laundry services, Hair making/barbing, Home cleaning, Plumbing, Electrical installations/fixtures</p>
+                <ul class="list-inline">
+                  <li>Date: January 2020</li>
+                  <li>Client: Fmtlabz</li>
+                  <li>Category: Service</li>
+                </ul>
+                <button class="btn btn-primary" data-dismiss="modal" type="button">
+                  <i class="fas fa-times"></i>
+                  Close Project</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 2 -->
+  <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"></div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <div class="modal-body">
+                <!-- Project Details Go Here -->
+                <h2 class="text-uppercase">Fmtlabz</h2>
+                <p class="item-intro text-muted">This website</p>
+                <img class="img-fluid d-block mx-auto" src="img/portfolio/fmtlabs2.png" alt="">
+                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                <ul class="list-inline">
+                  <li>Date: January 2017</li>
+                  <li>Client: Explore</li>
+                  <li>Category: Graphic Design</li>
+                </ul>
+                <button class="btn btn-primary" data-dismiss="modal" type="button">
+                  <i class="fas fa-times"></i>
+                  Close Project</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 3 -->
+  <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"></div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <div class="modal-body">
+                <!-- Project Details Go Here -->
+                <h2 class="text-uppercase">Project Name</h2>
+                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                <img class="img-fluid d-block mx-auto" src="img/portfolio/03-full.jpg" alt="">
+                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                <ul class="list-inline">
+                  <li>Date: January 2017</li>
+                  <li>Client: Finish</li>
+                  <li>Category: Identity</li>
+                </ul>
+                <button class="btn btn-primary" data-dismiss="modal" type="button">
+                  <i class="fas fa-times"></i>
+                  Close Project</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 4 -->
+  <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"></div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <div class="modal-body">
+                <!-- Project Details Go Here -->
+                <h2 class="text-uppercase">Project Name</h2>
+                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                <img class="img-fluid d-block mx-auto" src="img/portfolio/04-full.jpg" alt="">
+                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                <ul class="list-inline">
+                  <li>Date: January 2017</li>
+                  <li>Client: Lines</li>
+                  <li>Category: Branding</li>
+                </ul>
+                <button class="btn btn-primary" data-dismiss="modal" type="button">
+                  <i class="fas fa-times"></i>
+                  Close Project</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 5 -->
+  <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"></div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <div class="modal-body">
+                <!-- Project Details Go Here -->
+                <h2 class="text-uppercase">Project Name</h2>
+                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                <img class="img-fluid d-block mx-auto" src="img/portfolio/05-full.jpg" alt="">
+                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                <ul class="list-inline">
+                  <li>Date: January 2017</li>
+                  <li>Client: Southwest</li>
+                  <li>Category: Website Design</li>
+                </ul>
+                <button class="btn btn-primary" data-dismiss="modal" type="button">
+                  <i class="fas fa-times"></i>
+                  Close Project</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 6 -->
+  <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"></div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <div class="modal-body">
+                <!-- Project Details Go Here -->
+                <h2 class="text-uppercase">Project Name</h2>
+                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                <img class="img-fluid d-block mx-auto" src="img/portfolio/06-full.jpg" alt="">
+                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                <ul class="list-inline">
+                  <li>Date: January 2017</li>
+                  <li>Client: Window</li>
+                  <li>Category: Photography</li>
+                </ul>
+                <button class="btn btn-primary" data-dismiss="modal" type="button">
+                  <i class="fas fa-times"></i>
+                  Close Project</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Contact form JavaScript -->
+  <script src="js/jqBootstrapValidation.js"></script>
+  <script src="js/contact_me.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="js/agency.min.js"></script>
+
+  <script src="js/parallax.js-1.3.1/parallax.js"></script> <!-- http://pixelcog.github.io/parallax.js/ -->
+  
+  <script>
+    // Parallax
+    // $(function() {  
+    //   $('.header').parallax({
+    //     imageSrc: 'img/team/3.jpg',
+    //     speed: 0.2
+    //   });
+    // });
+  </script>
+  <script>
+    filterSelection("all")
+    function filterSelection(c) {
+      var x, i;
+      x = document.getElementsByClassName("column");
+      if (c == "all") c = "";
+      for (i = 0; i < x.length; i++) {
+        w3RemoveClass(x[i], "show");
+        if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+      }
+    }
+    
+    function w3AddClass(element, name) {
+      var i, arr1, arr2;
+      arr1 = element.className.split(" ");
+      arr2 = name.split(" ");
+      for (i = 0; i < arr2.length; i++) {
+        if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+      }
+    }
+    
+    function w3RemoveClass(element, name) {
+      var i, arr1, arr2;
+      arr1 = element.className.split(" ");
+      arr2 = name.split(" ");
+      for (i = 0; i < arr2.length; i++) {
+        while (arr1.indexOf(arr2[i]) > -1) {
+          arr1.splice(arr1.indexOf(arr2[i]), 1);     
+        }
+      }
+      element.className = arr1.join(" ");
+    }
+    
+    
+    // Add active class to the current button (highlight it)
+    var btnContainer = document.getElementById("myBtnContainer");
+    var btns = btnContainer.getElementsByClassName("btn");
+    for (var i = 0; i < btns.length; i++) {
+      btns[i].addEventListener("click", function(){
+        var current = document.getElementsByClassName("active");
+        current[0].className = current[0].className.replace(" active", "");
+        this.className += " active";
+      });
+    }
     </script>
 </body>
+
 </html>
